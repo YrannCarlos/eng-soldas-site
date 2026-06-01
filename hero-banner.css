@@ -1,0 +1,25 @@
+.hero-image {
+  width: 100%;
+  max-width: none;
+  min-height: clamp(320px, 42vw, 690px);
+  margin: 0;
+  display: block;
+  padding: 0;
+  background-image: url("eng-soldas-hero.png.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stats-band {
+  margin-top: 32px;
+}
+
+@media (max-width: 760px) {
+  .hero-image {
+    min-height: 260px;
+    background-size: contain;
+    background-color: #07111f;
+  }
+}
