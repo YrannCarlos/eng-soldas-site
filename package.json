@@ -1,0 +1,14 @@
+{
+  "name": "eng-soldas-site",
+  "version": "1.0.9",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node validate.js",
+    "preview": "node server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

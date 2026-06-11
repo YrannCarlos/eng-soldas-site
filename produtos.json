@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "nome": "Bambina Fonte TIG 300 AC/DC",
+    "categoria": "Máquina de solda industrial",
+    "descricao": "Fonte TIG AC/DC industrial para aplicações que exigem controle e acabamento.",
+    "imagem": "assets/bambina-tig-300.jpg"
+  },
+  {
+    "nome": "Painel elétrico industrial",
+    "categoria": "Elétrica industrial",
+    "descricao": "Painéis e quadros elétricos para comando, distribuição, montagem e manutenção industrial.",
+    "imagem": "assets/painel-eletrico.jpg"
+  },
+  {
+    "nome": "Máquina MIG ESAB",
+    "categoria": "Máquinas de solda MIG",
+    "descricao": "Equipamento MIG para oficina, indústria, manutenção e serviços de soldagem.",
+    "imagem": "assets/mig-esab.jpg"
+  },
+  {
+    "nome": "Gerador Elite 8000",
+    "categoria": "Geradores",
+    "descricao": "Gerador para campo, oficina, obras e apoio em serviços de manutenção.",
+    "imagem": "assets/gerador-elite8000.jpg"
+  },
+  {
+    "nome": "Máquina de Plasma",
+    "categoria": "Corte plasma",
+    "descricao": "Máquina de corte plasma para metais, manutenção e serviços industriais.",
+    "imagem": "assets/maquina-plasma.jpg"
+  },
+  {
+    "nome": "Ferramentas elétricas",
+    "categoria": "Ferramentas",
+    "descricao": "Ferramentas elétricas para montagem, reparo, manutenção e uso profissional.",
+    "imagem": "assets/ferramentas-eletricas.jpg"
+  },
+  {
+    "nome": "Gerador de solda",
+    "categoria": "Geradores de solda",
+    "descricao": "Solução para soldagem em campo, obras, manutenção externa e locais remotos.",
+    "imagem": "assets/gerador-de-solda.jpg"
+  },
+  {
+    "nome": "Tochas plasma e MIG",
+    "categoria": "Acessórios",
+    "descricao": "Tochas, cabos e acessórios para máquinas MIG e plasma.",
+    "imagem": "assets/tochas-mig-plasma.jpg"
+  },
+  {
+    "nome": "Garra terra",
+    "categoria": "Acessórios",
+    "descricao": "Garra negativa para retorno de corrente em processos de soldagem.",
+    "imagem": "assets/garra-terra.jpg"
+  },
+  {
+    "nome": "Máquina inversora",
+    "categoria": "Máquinas inversoras",
+    "descricao": "Inversora compacta para soldagem e manutenção profissional.",
+    "imagem": "assets/maquina-inversora.jpg"
+  },
+  {
+    "nome": "Máquina TIG",
+    "categoria": "TIG",
+    "descricao": "Equipamento TIG para trabalhos que exigem acabamento e controle de solda.",
+    "imagem": "assets/maquina-tig.jpg"
+  },
+  {
+    "nome": "TIG AC/DC",
+    "categoria": "TIG AC/DC",
+    "descricao": "Equipamento TIG AC/DC para aplicações profissionais e materiais específicos.",
+    "imagem": "assets/tig-acdc.jpg"
+  }
+]

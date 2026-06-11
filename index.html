@@ -5,64 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Eng Soldas em Ponta Grossa-PR: assistência técnica em máquinas de solda, manutenção elétrica industrial, inversores de frequência, placas eletrônicas, painéis e serviços de soldagem."
+      content="Eng Soldas em Ponta Grossa-PR: loja de máquinas de solda, geradores, ferramentas elétricas, tochas, consumíveis, locação, assistência técnica e manutenção industrial."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Eng Soldas" />
-    <meta
-      name="keywords"
-      content="Eng Soldas, assistência técnica máquinas de solda, manutenção industrial Ponta Grossa, elétrica industrial, soldagem industrial, inversor de frequência, placas eletrônicas, NR-10, NR-12"
-    />
-    <link rel="canonical" href="https://www.engsoldas.com.br/" />
+    <title>ENG SOLDAS - Loja, Assistência Técnica e Manutenção Industrial</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="Eng Soldas" />
-    <meta property="og:title" content="Eng Soldas | Assistência Técnica, Soldagem e Elétrica Industrial" />
-    <meta
-      property="og:description"
-      content="Assistência técnica em máquinas de solda, manutenção elétrica industrial, inversores, placas eletrônicas, painéis e serviços de soldagem em Ponta Grossa-PR."
-    />
-    <meta property="og:url" content="https://www.engsoldas.com.br/" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Eng Soldas | Assistência Técnica, Soldagem e Elétrica Industrial" />
-    <meta
-      name="twitter:description"
-      content="Manutenção industrial, assistência em máquinas de solda, elétrica industrial, eletrônica industrial e serviços de soldagem."
-    />
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Eng Soldas",
-        "description": "Assistência técnica em máquinas de solda, manutenção elétrica industrial, eletrônica industrial e serviços de soldagem.",
-        "url": "https://www.engsoldas.com.br/",
-        "telephone": "+55 42 99980-2414",
-        "email": "engsoldaspg@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Avenida Euzébio de Queiroz, 1124 – Uvaranas",
-          "addressLocality": "Ponta Grossa",
-          "addressRegion": "PR",
-          "addressCountry": "BR"
-        },
-        "areaServed": "Ponta Grossa e região",
-        "sameAs": []
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(reg => reg.unregister())).catch(() => {});
+      }
+      if ('caches' in window) {
+        caches.keys().then(keys => keys.forEach(key => caches.delete(key))).catch(() => {});
       }
     </script>
-
-    <title>Eng Soldas | Assistência Técnica, Soldagem e Elétrica Industrial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="hero-banner.css" />
   </head>
+
   <body>
     <header class="site-header" id="topo">
       <nav class="navbar" aria-label="Navegação principal">
@@ -70,165 +29,146 @@
           <span class="brand-mark">ES</span>
           <span>
             <strong>Eng Soldas</strong>
-            <small>Soldagem • Elétrica • Manutenção</small>
+            <small>Loja e assistência técnica</small>
           </span>
         </a>
 
         <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
 
         <div class="nav-links">
+          <a href="#produtos">Produtos</a>
           <a href="#servicos">Serviços</a>
-          <a href="#assistencia">Assistência</a>
-          <a href="#produtos">Máquinas</a>
-          <a href="#sobre">Sobre</a>
+          <a href="#locacao">Locação</a>
+          <a href="#sobre">Empresa</a>
           <a href="#contato">Contato</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero hero-image" aria-label="Eng Soldas - Assistência Técnica, Soldagem e Elétrica Industrial"></section>
-
-      <section class="stats-band" aria-label="Áreas de atuação">
-        <div>
-          <strong>Soldagem</strong>
-          <span>MIG • TIG • Eletrodo</span>
+      <section class="hero" aria-label="Eng Soldas - loja e assistência técnica">
+        <div class="hero-media hero-collage" aria-hidden="true">
+          <img src="assets/bambina-tig-300.jpg" alt="" />
+          <img src="assets/mig-esab.jpg" alt="" />
+          <img src="assets/gerador-elite8000.jpg" alt="" />
+          <img src="assets/maquina-plasma.jpg" alt="" />
         </div>
-        <div>
-          <strong>Elétrica</strong>
-          <span>Industrial e comercial</span>
-        </div>
-        <div>
-          <strong>Eletrônica</strong>
-          <span>Placas e inversores</span>
+        <div class="hero-overlay"></div>
+        <div class="section-shell hero-content">
+          <p class="eyebrow">Loja • Locação • Assistência Técnica</p>
+          <h1>Máquinas, equipamentos e serviços para soldagem e manutenção industrial.</h1>
+          <p class="hero-text">
+            Venda e locação de máquinas de solda, geradores, ferramentas elétricas, painéis elétricos
+            e suporte técnico para empresas, oficinas, indústrias e produtores.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary whatsapp-link" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn secondary" href="#produtos">Ver produtos</a>
+          </div>
         </div>
       </section>
 
-      <section class="section-shell" id="servicos">
-        <div class="section-heading">
-          <p class="eyebrow">Serviços</p>
-          <h2>Soluções técnicas para manutenção, elétrica e soldagem.</h2>
+      <section class="stats-band section-shell" aria-label="Áreas principais">
+        <div><strong>Venda</strong><span>Máquinas, ferramentas, painéis e acessórios</span></div>
+        <div><strong>Locação</strong><span>Máquinas de solda, geradores e equipamentos</span></div>
+        <div><strong>Assistência</strong><span>Diagnóstico, reparo e suporte técnico</span></div>
+      </section>
+
+      <section class="section-shell products-section" id="produtos">
+        <div class="section-heading centered">
+          <p class="eyebrow">Produtos sob consulta</p>
+          <h2>Equipamentos e acessórios para solda, manutenção e elétrica.</h2>
           <p>
-            Atendimento voltado para empresas que precisam de agilidade, confiabilidade
-            e suporte técnico em campo ou bancada.
+            Produtos apresentados como referência visual. Disponibilidade, modelos, estado do equipamento,
+            marcas e valores devem ser confirmados diretamente pelo WhatsApp da empresa.
+          </p>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section-shell service-intro" id="servicos">
+        <div class="section-heading">
+          <p class="eyebrow">Serviços técnicos</p>
+          <h2>Assistência para quem não pode ficar parado.</h2>
+          <p>
+            Além da venda e locação, a Eng Soldas atua com manutenção industrial, elétrica,
+            eletrônica e serviços de soldagem.
           </p>
         </div>
 
         <div class="service-grid">
-          <article class="service-card">
-            <span class="icon">⚡</span>
-            <h3>Manutenção elétrica industrial</h3>
-            <p>Instalações, comandos, distribuição, adequações e manutenção preventiva ou corretiva.</p>
-          </article>
-          <article class="service-card">
-            <span class="icon">🛠️</span>
-            <h3>Máquinas de solda</h3>
-            <p>Assistência em equipamentos MIG, TIG, eletrodo, tochas, plasma e acessórios.</p>
-          </article>
-          <article class="service-card">
-            <span class="icon">🔌</span>
-            <h3>Inversores e placas eletrônicas</h3>
-            <p>Diagnóstico e conserto de inversores de frequência e placas eletrônicas industriais.</p>
-          </article>
-          <article class="service-card">
-            <span class="icon">🏭</span>
-            <h3>Quadros e painéis</h3>
-            <p>Montagem e manutenção de quadros de comando, distribuição e sistemas industriais.</p>
-          </article>
-          <article class="service-card">
-            <span class="icon">🔥</span>
-            <h3>Soldagem industrial</h3>
-            <p>Serviços de soldagem, manutenção eletromecânica e fabricação de estruturas metálicas.</p>
-          </article>
-          <article class="service-card">
-            <span class="icon">✅</span>
-            <h3>Adequações NR-10 e NR-12</h3>
-            <p>Suporte técnico para adequações de segurança elétrica e máquinas industriais.</p>
-          </article>
+          <article class="service-card featured"><span class="icon">🔥</span><h3>Máquinas de solda</h3><p>Manutenção em máquinas MIG, TIG, eletrodo, plasma, tochas e acessórios.</p></article>
+          <article class="service-card"><span class="icon">🔧</span><h3>Placas eletrônicas</h3><p>Conserto, análise de falhas, testes e recuperação de placas industriais.</p></article>
+          <article class="service-card"><span class="icon">⚡</span><h3>Inversores de frequência</h3><p>Diagnóstico, parametrização, manutenção e troca de componentes.</p></article>
+          <article class="service-card"><span class="icon">🏭</span><h3>Painéis e comandos</h3><p>Montagem, revisão e manutenção de quadros de comando e distribuição.</p></article>
+          <article class="service-card"><span class="icon">🧰</span><h3>Instalações elétricas</h3><p>Serviços elétricos industriais e comerciais com suporte técnico especializado.</p></article>
+          <article class="service-card"><span class="icon">✅</span><h3>NR-10 e NR-12</h3><p>Adequações e apoio técnico para segurança elétrica e máquinas industriais.</p></article>
         </div>
       </section>
 
-      <section class="split-section section-shell" id="assistencia">
-        <div>
-          <p class="eyebrow">Assistência técnica</p>
-          <h2>Diagnóstico técnico para reduzir parada e recuperar equipamentos.</h2>
-          <p>
-            A Eng Soldas atende demandas de manutenção industrial, assistência em máquinas
-            de solda, geradores, painéis elétricos, inversores e equipamentos de produção.
-          </p>
-          <a class="inline-link whatsapp-link" href="#" target="_blank" rel="noopener">
-            Falar com a assistência técnica →
-          </a>
-        </div>
-        <div class="checklist-card">
-          <h3>Atendimentos comuns</h3>
-          <ul>
-            <li>Máquina de solda sem abertura de arco</li>
-            <li>Falhas em placa eletrônica industrial</li>
-            <li>Inversor de frequência com erro ou alarme</li>
-            <li>Quadro elétrico com problema de comando</li>
-            <li>Manutenção eletromecânica em equipamentos</li>
-          </ul>
+      <section class="showcase-section" id="locacao">
+        <div class="section-shell split-section">
+          <div>
+            <p class="eyebrow">Locação e fornecimento</p>
+            <h2>Equipamentos para serviços temporários, obras e manutenção.</h2>
+            <p>
+              Fornecimento e locação de máquinas de solda, geradores, inversores,
+              painéis elétricos e consumíveis para soldagem.
+            </p>
+            <a class="inline-link whatsapp-link" href="#" target="_blank" rel="noopener">Consultar disponibilidade →</a>
+          </div>
+
+          <div class="showcase-card">
+            <img src="assets/gerador-elite8000.jpg" alt="Gerador Elite 8000" />
+            <div><strong>Venda e locação</strong><span>Equipamentos para campo, manutenção, oficina e indústria.</span></div>
+          </div>
         </div>
       </section>
 
-      <section class="section-shell products-section" id="produtos">
-        <div class="section-heading">
-          <p class="eyebrow">Máquinas e equipamentos</p>
-          <h2>Área preparada para futuros produtos.</h2>
-          <p>
-            Em breve, esta seção poderá exibir máquinas, ferramentas e equipamentos
-            disponíveis para venda ou locação. O site já está estruturado para receber catálogo.
-          </p>
+      <section class="section-shell segments-section">
+        <div class="section-heading centered">
+          <p class="eyebrow">Atendimento</p>
+          <h2>Para indústria, agro, comércio, transportes e oficinas.</h2>
         </div>
-
-        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="segment-grid">
+          <article><strong>Indústrias</strong><span>Manutenção, painéis, solda e suporte técnico.</span></article>
+          <article><strong>Agrícola</strong><span>Equipamentos, geradores e assistência para campo.</span></article>
+          <article><strong>Oficinas</strong><span>Máquinas MIG, TIG, plasma, ferramentas e acessórios.</span></article>
+          <article><strong>Transportes</strong><span>Serviços de solda, elétrica e manutenção corretiva.</span></article>
+        </div>
       </section>
 
       <section class="about section-shell" id="sobre">
         <div class="about-card">
-          <p class="eyebrow">Sobre a empresa</p>
-          <h2>Eng Soldas Engenharia de Soldas e Engenharia Elétrica.</h2>
-          <p>
-            Empresa especializada em manutenção industrial, elétrica, eletrônica e serviços
-            de soldagem, atendendo setores industrial, agrícola, comercial e de transportes.
-          </p>
+          <div>
+            <p class="eyebrow">Sobre a empresa</p>
+            <h2>Eng Soldas Engenharia de Soldas e Engenharia Elétrica.</h2>
+            <p>
+              Empresa especializada em manutenção industrial, elétrica, eletrônica, serviços de
+              soldagem, fornecimento e locação de equipamentos para setores industrial, agrícola,
+              comercial e de transportes.
+            </p>
+          </div>
           <dl class="company-info">
-            <div>
-              <dt>CNPJ</dt>
-              <dd>54.571.242/0001-64</dd>
-            </div>
-            <div>
-              <dt>Endereço</dt>
-              <dd>Avenida Euzébio de Queiroz, 1124 – Uvaranas, Ponta Grossa – PR</dd>
-            </div>
-            <div>
-              <dt>Telefone</dt>
-              <dd>(42) 99980-2414</dd>
-            </div>
-            <div>
-              <dt>E-mail</dt>
-              <dd>engsoldaspg@gmail.com</dd>
-            </div>
+            <div><dt>Razão social</dt><dd>Eng Soldas LTDA</dd></div>
+            <div><dt>CNPJ</dt><dd>54.571.242/0001-64</dd></div>
+            <div><dt>Endereço</dt><dd>Avenida Euzébio de Queiroz, 1124 – Uvaranas, Ponta Grossa – PR</dd></div>
+            <div><dt>Telefone</dt><dd>(42) 99980-2414</dd></div>
+            <div><dt>E-mail</dt><dd>engsoldaspg@gmail.com</dd></div>
+            <div><dt>Responsável técnico</dt><dd>Eng. Olívio Soares Pereira</dd></div>
           </dl>
         </div>
       </section>
 
       <section class="cta-section" id="contato">
-        <div class="section-shell cta-content">
-          <div>
-            <p class="eyebrow">Contato</p>
-            <h2>Precisa de orçamento, manutenção ou assistência?</h2>
-            <p>
-              Envie uma mensagem pelo WhatsApp e informe o equipamento, defeito ou serviço necessário.
-            </p>
-          </div>
+        <div class="section-shell cta-card">
+          <p class="eyebrow">Orçamento rápido</p>
+          <h2>Precisa comprar, alugar ou consertar um equipamento?</h2>
+          <p>Envie uma mensagem informando o produto ou serviço desejado e receba orientação da equipe.</p>
           <div class="cta-actions">
-            <a class="btn primary whatsapp-link" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn primary whatsapp-link" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
             <a class="btn secondary" href="mailto:engsoldaspg@gmail.com">Enviar e-mail</a>
           </div>
         </div>
@@ -237,8 +177,8 @@
 
     <footer class="site-footer">
       <div class="section-shell footer-content">
-        <p>© <span id="currentYear"></span> Eng Soldas. Todos os direitos reservados.</p>
-        <a href="#topo">Voltar ao topo ↑</a>
+        <strong>Eng Soldas</strong>
+        <span>© <span id="currentYear"></span> - Loja, locação, assistência técnica e manutenção industrial.</span>
       </div>
     </footer>
 

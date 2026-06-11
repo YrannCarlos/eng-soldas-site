@@ -3,7 +3,7 @@
 const company = {
   whatsapp: "5542999802414",
   whatsappMessage:
-    "Olá, vim pelo site da Eng Soldas e gostaria de solicitar um orçamento.",
+    "Olá, vim pelo site da Eng Soldas e gostaria de consultar produtos, locação ou assistência técnica.",
 };
 
 function getWhatsappUrl(message = company.whatsappMessage) {
@@ -35,13 +35,13 @@ function setupMenu() {
   });
 }
 
-function productIcon(category = "") {
-  const text = String(category).toLowerCase();
-  if (text.includes("solda")) return "🔥";
-  if (text.includes("gerador")) return "⚙️";
-  if (text.includes("elétr") || text.includes("eletr")) return "⚡";
-  if (text.includes("ferrament")) return "🛠️";
-  return "🏭";
+function escapeHtml(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function createEmptyProductsMessage() {
@@ -49,7 +49,7 @@ function createEmptyProductsMessage() {
   div.className = "empty-products";
   div.innerHTML = `
     <strong>Catálogo em preparação.</strong>
-    <p>Em breve, a Eng Soldas poderá anunciar aqui máquinas de solda, geradores, ferramentas elétricas e equipamentos disponíveis para venda ou locação.</p>
+    <p>Adicione produtos no arquivo produtos.json para exibir máquinas, geradores, ferramentas e acessórios.</p>
   `;
   return div;
 }
@@ -58,13 +58,16 @@ function createProductCard(product) {
   const card = document.createElement("article");
   card.className = "product-card";
 
-  const name = product.nome || "Produto";
-  const category = product.categoria || "Equipamento";
-  const description = product.descricao || "Consulte disponibilidade e condições pelo WhatsApp.";
-  const buttonMessage = `Olá, vim pelo site da Eng Soldas e gostaria de saber mais sobre: ${name}.`;
+  const name = escapeHtml(product.nome || "Produto");
+  const category = escapeHtml(product.categoria || "Equipamento");
+  const description = escapeHtml(product.descricao || "Consulte disponibilidade e condições pelo WhatsApp.");
+  const image = escapeHtml(product.imagem || "");
+  const buttonMessage = `Olá, vim pelo site da Eng Soldas e gostaria de saber disponibilidade, modelo e valor de: ${product.nome || "produto"}.`;
 
   card.innerHTML = `
-    <div class="product-image" aria-hidden="true">${productIcon(category)}</div>
+    <div class="product-image">
+      ${image ? `<img src="${image}" alt="${name}" loading="lazy" onerror="this.parentElement.classList.add('image-fallback'); this.remove();" />` : `<span>ENG</span>`}
+    </div>
     <div class="product-card-content">
       <span class="product-tag">${category}</span>
       <h3>${name}</h3>

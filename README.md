@@ -1,33 +1,21 @@
-# Eng Soldas Site
+# ENG SOLDAS - Produtos com imagens corretas
 
-Site institucional estático da Eng Soldas, preparado para publicação como Static Site no Render.
+Site estático com 12 produtos e imagens locais correspondentes a cada categoria.
 
-## Estrutura
+## Como abrir
 
-- `index.html`: página principal
-- `style.css`: estilos responsivos
-- `script.js`: menu mobile, WhatsApp e carregamento do catálogo
-- `produtos.json`: catálogo futuro de produtos
+No PowerShell:
 
-## Deploy no Render
-
-Tipo de serviço: Static Site
-
-- Build Command: deixar vazio
-- Publish Directory: `.`
-
-## Como adicionar produtos futuramente
-
-Edite o arquivo `produtos.json`:
-
-```json
-[
-  {
-    "nome": "Máquina MIG 250A",
-    "categoria": "Máquinas de solda",
-    "descricao": "Equipamento disponível para venda. Consulte disponibilidade pelo WhatsApp."
-  }
-]
+```powershell
+npm run dev
 ```
 
-Se o arquivo estiver vazio (`[]`), o site mostra uma mensagem informando que o catálogo está em preparação.
+Ou dê dois cliques em:
+
+```txt
+ABRIR-SITE-ENG-SOLDAS.bat
+```
+
+## Imagens
+
+As imagens estão dentro da pasta `assets/`, então não dependem de link externo para aparecer.
